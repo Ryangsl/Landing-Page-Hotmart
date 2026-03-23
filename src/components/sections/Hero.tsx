@@ -69,7 +69,7 @@ export default function Hero() {
                 key={b}
                 className="bg-white/10 text-teal-100 text-xs px-3 py-1 rounded-full border border-white/10"
               >
-                checkmark {b}
+                &#x2705; {b}
               </span>
             ))}
           </div>
@@ -88,7 +88,7 @@ export default function Hero() {
             {/* CARD DO PRODUTO */}
             <div className="bg-white rounded-3xl shadow-2xl p-5">
               <img
-                src="/images/ebook.png"
+                src="/images/ebook1.png"
                 alt="E-book Guia para Pais de Criancas com TEA"
                 className="rounded-xl w-full object-cover"
               />
