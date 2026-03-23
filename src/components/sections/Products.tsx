@@ -1,16 +1,14 @@
 import Container from "../ui/Container"
 import Button from "../ui/Button"
+import SectionTitle from "../ui/SectionTitle"
 
 export default function Products() {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 md:py-16 bg-gray-50">
       <Container>
+        <SectionTitle>Escolha o melhor para o seu momento</SectionTitle>
 
-        <h2 className="text-lg font-semibold text-center mb-6">
-          Escolha o melhor para o seu momento
-        </h2>
-
-        <div className="space-y-5">
+        <div className="space-y-5 md:grid md:grid-cols-2 md:gap-5">
 
           {/* PRODUTO 1 */}
           <div className="bg-white rounded-3xl p-5 shadow-sm border">
@@ -50,8 +48,8 @@ export default function Products() {
           <div className="bg-white rounded-3xl p-5 shadow-md border-2 border-green-500 relative">
 
             {/* BADGE */}
-            <div className="absolute -top-3 left-4 bg-green-600 text-white text-xs px-3 py-1 rounded-full shadow">
-              MAIS PROCURADO
+            <div className="absolute -top-3 left-4 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs px-4 py-2 rounded-full shadow-lg font-semibold">
+              ⭐ MAIS PROCURADO
             </div>
 
             <h3 className="font-semibold text-base mt-2">
@@ -70,7 +68,7 @@ export default function Products() {
             </div>
 
             {/* PREÇO */}
-            <div className="mt-4">
+            <div className="mt-4 bg-green-50 rounded-xl p-3">
               <p className="text-xl font-bold text-green-600">
                 R$ 27
               </p>

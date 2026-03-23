@@ -22,9 +22,10 @@ export default function StickyCTA() {
         bg-green-600 text-white
         text-center py-4 font-bold
         shadow-lg z-50
+        pb-safe text-sm tracking-wide
       "
     >
-      GARANTIR ACESSO AGORA
+      🔒 GARANTIR ACESSO AGORA
     </a>
   )
 }

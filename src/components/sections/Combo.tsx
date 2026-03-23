@@ -13,7 +13,7 @@ export default function Combo() {
           </h2>
 
           <p className="text-center text-sm mt-2 opacity-90">
-            Clínica + Escola
+            🏥 Clínica + 🏫 Escola
           </p>
 
           <div className="text-center mt-4">
@@ -23,6 +23,10 @@ export default function Combo() {
 
             <p className="text-3xl font-bold">
               R$ 37
+            </p>
+
+            <p className="text-sm mt-2 bg-white/20 inline-block px-3 py-1 rounded-full">
+              💰 Economize R$ 17!
             </p>
           </div>
 

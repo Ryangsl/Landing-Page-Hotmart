@@ -1,8 +1,14 @@
-export default function Button({ children, href }: any) {
+type ButtonProps = {
+  children: React.ReactNode
+  href: string
+  className?: string
+}
+
+export default function Button({ children, href, className = "" }: ButtonProps) {
   return (
     <a
       href={href}
-      className="
+      className={`
         block w-full text-center
         bg-green-600 text-white
         py-4 rounded-2xl
@@ -12,7 +18,8 @@ export default function Button({ children, href }: any) {
         hover:scale-[1.02]
         active:scale-95
         transition-all duration-200
-      "
+        ${className}
+      `}
     >
       {children}
     </a>

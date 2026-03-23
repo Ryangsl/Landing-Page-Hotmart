@@ -12,23 +12,23 @@ export default function Offer() {
     <section className="py-12">
       <Container>
 
-        <div className="bg-yellow-100 rounded-3xl p-6 text-center shadow-md">
+        <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-3xl p-6 text-center shadow-md border-2 border-yellow-300">
 
-          <h2 className="text-lg font-bold">
-            Oferta especial por tempo limitado
+          <h2 className="text-lg font-bold text-gray-800">
+            ⏰ Oferta especial por tempo limitado
           </h2>
 
           <p className="line-through text-gray-500 mt-2">
             De R$ 97
           </p>
 
-          <p className="text-3xl font-bold text-red-500">
+          <p className="text-3xl font-bold text-red-600">
             R$ 27
           </p>
 
-          <p className="mt-2 font-semibold text-sm">
-            ⚠️ Expira em: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-          </p>
+          <div className="mt-3 bg-red-500 text-white px-4 py-2 rounded-full inline-block font-bold text-sm">
+            Expira em: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+          </div>
 
           <div className="mt-5">
             <Button href="#">
@@ -37,7 +37,7 @@ export default function Offer() {
           </div>
 
           <p className="text-xs text-gray-600 mt-3">
-            Garantia de 7 dias ou seu dinheiro de volta
+            ✅ Garantia de 7 dias ou seu dinheiro de volta
           </p>
 
         </div>

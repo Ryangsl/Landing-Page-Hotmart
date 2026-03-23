@@ -1,11 +1,12 @@
-export default function Card({ text }: { text: string }) {
-  return <div style={styles.card}>{text}</div>
+type CardProps = {
+  children: React.ReactNode
+  className?: string
 }
 
-const styles = {
-  card: {
-    background: "#f5f5f5",
-    padding: "15px",
-    borderRadius: "8px"
-  }
+export default function Card({ children, className = "" }: CardProps) {
+  return (
+    <div className={`bg-gray-100 rounded-lg p-4 ${className}`}>
+      {children}
+    </div>
+  )
 }

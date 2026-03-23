@@ -15,20 +15,8 @@ export default function PopupProof() {
   if (!show) return null
 
   return (
-    <div style={styles.popup}>
+    <div className="fixed bottom-20 left-4 bg-black text-white px-4 py-3 rounded-lg shadow-lg border border-green-500 text-sm font-semibold animate-pulse">
       🟢 Alguém acabou de adquirir o material!
     </div>
   )
-}
-
-const styles = {
-  popup: {
-    position: "fixed" as const,
-    bottom: "80px",
-    left: "20px",
-    background: "#000",
-    color: "#fff",
-    padding: "10px",
-    borderRadius: "8px"
-  }
 }
