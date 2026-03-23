@@ -88,7 +88,7 @@ export default function Hero() {
             {/* CARD DO PRODUTO */}
             <div className="bg-white rounded-3xl shadow-2xl p-5">
               <img
-                src="/images/ebook1.png"
+                src="/images/ebook1.jpg"
                 alt="E-book Guia para Pais de Criancas com TEA"
                 className="rounded-xl w-full object-cover"
               />
